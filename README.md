@@ -1,2 +1,2 @@
-# Calculadora-b-sica-jquery
+# Calculadora-basica-jquery
 Ejemplo calculadora básica con jquery
