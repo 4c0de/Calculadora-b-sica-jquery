@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<!--Abrimos la etiqueta de la página-->
+
+<html lang="es">
+	<!--Definimos el head-->
+
+<head>
+
+<meta charset="utf-8" />
+<title>Ejercicio 1 JQuery Calculator</title>
+
+<!--fichero query-->
+  <script type="text/javascript" src="js/jquery-1.11.1.js"></script>
+
+  <!-- Fichero que se refiere a jQuery UI para poder usar sus diseños -->
+
+
+  <!-- Añadimos la hoja de estilo de  CSS -->
+
+ 
+  <link rel="stylesheet" type="text/css" href="css/estilo.css">
+
+
+  <!--Fichero donde tendremos nuestro script de jQuery-->
+  
+  <script type="text/javascript" src="js/miarchivojquery.js"></script>
+
+</head>
+
+<!-- Definimos el body -->
+
+
+<body>
+<header></header>	
+
+<section>
+	
+
+    <article>
+           <h1 id="titulo">CALCULADORA ENIGMA<h1>
+                  <!--Capa principal calculadora-->
+           <div class="calculadora">
+                             <!--capa para definir el display-->
+                         <div class="display">
+                            <input type="text"  id="entrada" name="entrada" autofocus value="" readonly onkeypress="operarTeclas()">
+                         </div>  
+                                 <!--capa para crear los botones numéricos-->
+                            <div class="numericos">
+                                  
+                                    <input type="button" class="botonesNumericos" value="7" onclick="Click('7')"/>
+                                    <input type="button" class="botonesNumericos" value="8" onclick="Click('8')"/>
+                                    <input type="button" class="botonesNumericos" value="9" onclick="Click('9')"/>
+                                    <input type="button" class="botonesNumericos" value="4" onclick="Click('4')"/>
+                                    <input type="button" class="botonesNumericos" value="5" onclick="Click('5')"/>
+                                    <input type="button" class="botonesNumericos" value="6" onclick="Click('6')"/>
+                                    <input type="button" class="botonesNumericos" value="1" onclick="Click('1')"/>
+                                    <input type="button" class="botonesNumericos" value="2" onclick="Click('2')"/>
+                                    <input type="button" class="botonesNumericos" value="3" onclick="Click('3')"/>
+                                  
+                                 
+                            </div>   
+                            <!--Capa botones operadores-->
+                            <div class="operadores">
+                                  
+                                    <input type="button" class="botonesOperadores" value="+" onclick="Operar(1)"/>
+                                    <input type="button" class="botonesOperadores" value="-" onclick="Operar(2)"/>
+                                    <input type="button" class="botonesOperadores" value="*" onclick="Operar(3)"/>
+                                    <input type="button" class="botonesOperadores" value="/" onclick="Operar(4)"/>
+                                  
+                                   
+                            </div> 
+
+                            <!--capa cero-->
+                            <div id="botonCero">
+                                       
+                                    <input type="button" class="cero" value="0" onclick="Click('0')"/>
+                            </div> 
+                            <!--capa igual-->
+                            <div id="botonIgual">
+                                    <input type="button" class="numeros" value="=" onclick="esIgual()"/>
+                            </div> 
+                             <!--capa limpiar-->
+                            <div id="botonLimpiar">
+                                    <input type="button" id="limpia" value="Restablecer" onclick="Limpiar()"/>
+                            </div>                       
+
+          </div> 
+          <!--capa para la imagen que ocultará calculadora o la mostrará-->
+          <div id="imagenCalculadora">
+               <img src="img/calculadora.png">
+          </div>          
+
+    </article>
+</section>         
+
+
+<footer></footer>
+
+</body>
+</html>
+
+

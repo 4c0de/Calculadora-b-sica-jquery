@@ -1,0 +1,240 @@
+
+/*Definimos todas las capas de la calculadora*/
+
+#titulo{
+  text-align: center;
+}
+
+
+#entrada{
+  text-align: right;
+  font-size: 24px;
+
+}
+
+
+
+.numericos{
+
+   width: 400px;
+   height: 100px;
+   right: 200px;
+   position: absolute;
+
+
+
+}
+
+.numeros{
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  font-size: 20px;
+  color: black;
+  background: yellow;
+  
+
+
+ 
+}  
+
+
+
+
+.botonesNumericos{
+  
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 30px; 
+  background: #F7BE81;
+  border: 1px solid black;
+  text-align: center;
+  float: left;
+
+}
+
+
+.calculadora{
+ 
+    width: 700px;
+    height: 500px;
+    border: 2px solid;
+    position: absolute;
+    top: 150px;
+    right: 350px;
+    background: #232323;
+   /*Redondeamos borde de la calculadora*/
+    border-radius: 46px 46px 46px 46px;
+    -moz-border-radius: 46px 46px 46px 46px;
+    -webkit-border-radius: 46px 46px 46px 46px;
+ 
+
+
+}
+
+.display{
+   margin-top: 20px;
+   margin-left: 50px;
+   width: 600px;
+   height: 50px;
+   border: 1px solid black;
+   background: #F5F6CE;
+
+  
+
+}
+
+.operadores{
+   width: 50px;
+   height: 50px;
+   position: absolute;
+   top:150;
+   left: 540px;
+
+}
+
+.botonesOperadores{
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 30px; 
+  background: #D8D8D8;
+  border: 1px solid black;
+  text-align: center;
+  float: left;
+
+}
+
+#botonCero{
+position: absolute;  
+width: 170px;
+height: 40px;
+background: #F7BE81;
+top:380px;
+right: 380px;
+border:1px solid black;
+padding-bottom: 10px;
+}
+
+.cero{
+width: 170px;
+height: 50px;
+background:#F7BE81;
+
+}
+
+#botonIgual{
+  width: 60px;
+  height: 60px;
+  margin-left: 50px;
+  margin-top: 30px; 
+  border: 1px solid black;
+  text-align: center;
+  top: 350px;
+  right: 268px;
+  position: absolute;
+
+}
+
+#imagenCalculadora{
+   position: absolute;
+   top:30px;
+   left: 1000px;
+     /*escala*/
+  -moz-transform: scale(0.2);
+  -webkit-transform: scale(0.2);
+  -o-transform: scale(0.2);
+   transform: scale(0.2);
+
+
+}
+
+#limpia{
+  width: 80px;
+  height: 20px;
+  top: 100px;
+  right: 600px;
+  position: absolute;
+}
+
+
+/*fin capas de calculadora*/
+
+/*efectos al pasar el raton por encima*/
+#imagenCalculadora:hover{
+-moz-transform: scale(0.5);
+  -webkit-transform: scale(0.5);
+  -o-transform: scale(0.5);
+   transform: scale(0.5);
+   cursor: pointer;
+ 
+
+}
+
+
+.botonesOperadores:hover{
+  cursor: pointer;
+}
+
+.botonesNumericos:hover{
+  cursor: pointer;
+}
+
+.numeros:hover{
+  cursor: pointer;
+}
+.cero:hover{
+  cursor: pointer;
+}
+/*fin efectos pasar el ratón por encima*/
+
+/*capa entrada calculadora numeros*/
+#entrada{
+ 
+  background:#F5F6CE;
+  border: none;
+  cursor: pointer;
+  width: 600px;
+  height: 48px;
+}
+
+/*efecto al hacer click en botones*/
+.botonesNumericos:active{
+  background: white;
+}
+
+.botonesOperadores:active{
+  background: white;
+}
+.numeros:active{
+  background: white;
+}
+.cero:active{
+  background: white;
+}
+/*fin efectos click*/
+
+
+/*Quitar focos de botones*/
+#limpia:focus{
+  outline: none;
+}
+.botonesNumericos:focus{
+  outline: none;
+}
+
+.botonesOperadores:focus{
+  outline: none;
+}
+
+.numericos:focus{
+  outline: none;
+}
+.operadores:focus{
+  outline: none;
+}
+
+.numeros:focus{
+  outline: none;
+}
